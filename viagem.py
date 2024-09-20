@@ -1,7 +1,7 @@
 import math
 
 valor_bruto = float(input("Qual o valor bruto da viagem? "))
-categoria_assento = str(input("Qual a categoria do assento? ")).lower
+categoria_assento = str(input("Qual a categoria do assento? ")).lower()
 qntd_viajantes = int(input("Quantos passageiros serão? "))
 
 
