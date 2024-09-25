@@ -62,17 +62,12 @@ else:
     print("Voto inválido.")
 
 #results
-if xbox > playstation and nintendo:
+
+if xbox > playstation and xbox > nintendo:
     print(f"Xbox foi o escolhido com {xbox} votos!")
-if playstation > xbox and nintendo:
+elif playstation > xbox and playstation > nintendo:
     print(f"Playstation foi o escolhido com {playstation} votos!")
-if nintendo > xbox and playstation:
+elif nintendo > xbox and nintendo > playstation:
     print(f"Nintendo foi o escolhido com {nintendo} votos!")
-elif xbox == playstation or xbox == nintendo or playstation == nintendo:
-    print(f"""
-      Houve um empate!
-      Xbox teve {xbox} votos.
-      Playstation teve {playstation} votos.
-      Nintendo teve {nintendo} votos. 
-      
-      """)
+else:
+    print("Houve empate!")
